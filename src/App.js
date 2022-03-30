@@ -5,9 +5,13 @@ export function App() {
   return (
     <div className="containerApp">
       <div className="gameBoard">
-        <h1>Jogador BETA</h1>
+        <div>
+          <h1>Jogador BETA</h1>
+        </div>
         <GameBoard />
-        <h1>Jogador ALFA</h1>
+        <div>
+          <h1>Jogador ALFA</h1>
+        </div>
       </div>
       <div className="styleSettings">
         <h2>Configurações de Estilo</h2>

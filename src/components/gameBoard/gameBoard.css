@@ -1,0 +1,22 @@
+table {
+  height: 60%;
+}
+
+td {
+  background-color: #BA7A3A;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  border-color: black;
+  border: solid 1px;
+}
+
+.noPieceHere {
+  background-color: #FFFEEA;
+  border-color: black;
+  border: solid 1px;
+}
+
+.titleGameBoard {
+  margin-bottom: 40px;
+}

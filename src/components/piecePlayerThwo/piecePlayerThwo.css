@@ -1,6 +1,7 @@
 .piecePlayerThwo {
-  border-radius: 14px;
+  border-radius: 30px;
   background: black;
-  width: 15px;
-  height: 15px;
+  width: 54px;
+  height: 54px;
+  margin: 12px;
 }
