@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { GameBoard } from './components/gameBoard/GameBoard';
+import './styles/global.css';
 
-function App() {
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="containerApp">
+      <div className="gameBoard">
+        <h1>Jogador BETA</h1>
+        <GameBoard />
+        <h1>Jogador ALFA</h1>
+      </div>
+      <div className="styleSettings">
+        <h2>Configurações de Estilo</h2>
+        <h3>Jogador ALFA</h3>
+        <h4>Cor das peças</h4>
+        <h3>Jogador BETA</h3>
+        <h4>Cor das peças</h4>
+      </div>
+      <div className="general">
+        <h2>Geral</h2>
+        <div className="containerButtonResetPieces">
+          <button className="buttonResetPieces">
+            Reiniciar Peças
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
