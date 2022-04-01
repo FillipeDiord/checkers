@@ -33,8 +33,8 @@ export const initialState = () => {
     playerTurn: 1,
     winner: false,
     tiles: tiles,
-    numPieceOne: 12,
-    numPieceTwo: 12,
+    numPieceOne: 8,
+    numPieceTwo: 8,
     jumping: null
   }
 
@@ -49,10 +49,10 @@ export const initialState = () => {
       AISelected: false
     }
 
-    if (y <= 2 && (x + y) % 2 === 1) {
+    if (y <= 1 && (x + y) % 2 === 1) {
       return { ...piece, player: 2 };
     }
-    else if (y >= 5 && (x + y) % 2 === 1) {
+    else if (y >= 6 && (x + y) % 2 === 1) {
       return piece;
     }
     else {

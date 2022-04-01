@@ -1,8 +1,5 @@
 import React from 'react';
 import { Board } from './components/gameBoard/Board';
-import MultiBackend from 'react-dnd-multi-backend';
-import HTML5toTouch from 'react-dnd-multi-backend/dist/esm/HTML5toTouch';
-import { DndProvider } from 'react-dnd';
 import './styles/app.css';
 
 export function App() {
@@ -16,9 +13,7 @@ export function App() {
         </div>
 
         <div className="board">
-          <DndProvider backend={MultiBackend} options={HTML5toTouch}>
-            <Board />
-          </DndProvider >
+          <Board />
         </div>
 
         <div className="player player-two">
