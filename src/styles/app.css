@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+html {
+  box-sizing: border-box
+}
+
+html * {
+  box-sizing: inherit
+}
+
+#root, body {
+  overflow-x: hidden;
+}
+
+body {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.box {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #f8f8fa;
+  border: 1px solid black;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "board board menu1"
+    "board board menu2";
+  grid-gap: 16px;
+  width: 1200px;
+}
+
+.game-board {
+  grid-area: board;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.board {
+  border: 2px solid #e8e8ea;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.player {
+  text-align: center;
+  padding: 16px;
+}
+
+.player-title {
+  font-size: 16px;
+}
+
+.player-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.game-menu .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.game-menu .subtitle {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.containerButtonResetPieces {
+  text-align: center;
+}
+
+.buttonResetPieces {
+  width: 200px;
+  height: 40px;
+  margin: 100px;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+  background-color: #88C100;
+}
