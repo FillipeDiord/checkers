@@ -11,7 +11,7 @@ export function Board() {
   const boardRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState(0);
 
-  //logic to keep 1:1 aspect ratio of board
+  //logic to keep 1 / 1 aspect ratio of board
   useEffect(() => {
     const resizeBoard = () => {
       const height = 630;

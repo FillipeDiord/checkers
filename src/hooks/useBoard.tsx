@@ -14,7 +14,7 @@ export interface GameState {
   jumping: number | null
 }
 
-export const initialState = () => {
+export function initialState() {
   const tiles: TileClass[] = [];
 
   for (let i = 0; i < 64; i++) {

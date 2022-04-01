@@ -18,7 +18,7 @@ interface PieceProps extends PieceClass {
 
 export function Piece({ player, king, canDrag, hasJump, AISelected, index, move, size }: PieceProps) {
 
-  //styling
+  //style of pieces
   const color = player === 1 ? ['rgb(183, 28, 28)', 'rgb(229, 57, 53)'] : ['rgb(33, 33, 33)', 'rgb(66, 66, 66)'];
   const iconSize = `${size / 21}px`
 
